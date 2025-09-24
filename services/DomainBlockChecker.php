@@ -67,15 +67,7 @@ final class DomainBlockChecker implements DomainBlockCheckerInterface
 
     private function toAsciiDomain(string $domain): ?string
     {
-        if (!function_exists('idn_to_ascii')) {
-            return strtolower($domain);
-        }
-
-        if (PHP_VERSION_ID >= 80000) {
-            $result = idn_to_ascii($domain, IDNA_DEFAULT);
-        } else {
-            $result = idn_to_ascii($domain, IDNA_DEFAULT, INTL_IDNA_VARIANT_UTS46);
-        }
+        $result = idn_to_ascii($domain, IDNA_DEFAULT, INTL_IDNA_VARIANT_UTS46);
 
         if ($result === false) {
             return null;
