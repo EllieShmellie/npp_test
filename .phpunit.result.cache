@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"tests\\phpunit\\unit\\DomainBlockCheckerTest::testExactDomainBlocked":0.007,"tests\\phpunit\\unit\\DomainBlockCheckerTest::testSubdomainBlockedWhenParentDomainIsBlocked":0,"tests\\phpunit\\unit\\DomainBlockCheckerTest::testSiblingDomainNotBlocked":0,"tests\\phpunit\\unit\\DomainBlockCheckerTest::testInvalidDomainThrows":0.001}}

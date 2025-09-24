@@ -1,0 +1,1 @@
+CREATE DATABASE yii2app_test OWNER yii2;
